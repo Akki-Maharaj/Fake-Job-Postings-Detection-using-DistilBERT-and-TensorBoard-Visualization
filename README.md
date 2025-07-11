@@ -29,6 +29,7 @@ It applies transfer learning on a real-world dataset and visualizes training met
 ---
 
 ## 📌 Project Structure
+```
 ├── data/ # Raw and preprocessed dataset
 ├── notebooks/ # Jupyter notebooks for EDA & experiments
 ├── models/ # Saved model checkpoints
@@ -36,7 +37,7 @@ It applies transfer learning on a real-world dataset and visualizes training met
 ├── main.py # Main training and evaluation script
 ├── requirements.txt # Project dependencies
 └── README.md
-
+```
 
 ---
 
