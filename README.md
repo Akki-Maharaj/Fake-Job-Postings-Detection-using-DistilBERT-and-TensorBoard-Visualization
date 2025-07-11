@@ -1,96 +1,66 @@
-🚫 Fake Job Postings Detection using DistilBERT & TensorBoard
-This project detects fake job postings using DistilBERT, a lightweight transformer model, with interactive training visualizations in TensorBoard.
+# 📄 Fake Job Postings Detection using DistilBERT & TensorBoard
 
-📊 Project Overview
-Online job scams are a real threat. This project aims to:
+Detect fake job postings using NLP and visualize training with TensorBoard.
 
-✅ Identify and classify suspicious job postings.
+---
 
-✅ Fine-tune a pre-trained transformer (DistilBERT) on a real dataset.
+## 🚀 Project Overview
 
-✅ Visualize training performance and metrics in TensorBoard.
+This project uses **DistilBERT**, a lightweight transformer model, to classify job postings as real or fake.  
+It applies transfer learning on a real-world dataset and visualizes training metrics using **TensorBoard** for easy monitoring.
 
-📂 Dataset
-Source: Fake Job Postings Dataset on Kaggle
+---
 
-Description: Contains real vs. fake job listings with multiple attributes.
+## 📊 Dataset
 
-⚙️ Main Features
-🧩 DistilBERT: Efficient, distilled version of BERT for faster training & inference.
+- **Source:** [Fake Job Postings Dataset on Kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)  
+- Includes job titles, descriptions, locations, and a target label indicating whether a posting is fraudulent.
 
-📈 TensorBoard: Tracks loss, accuracy, and fine-tuning progress.
+---
 
-📊 Clean Data Pipeline: Text preprocessing & tokenization with Hugging Face Transformers.
+## 🛠️ Technologies Used
 
-✅ How to Run
-1️⃣ Clone this Repo
-bash
-Copy
-Edit
-git clone https://github.com/Akki-Maharaj/Fake-Job-Postings-Detection-using-DistilBERT-and-TensorBoard-Visualization.git
-cd Fake-Job-Postings-Detection-using-DistilBERT-and-TensorBoard-Visualization
-2️⃣ Create a Virtual Environment
-bash
-Copy
-Edit
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-3️⃣ Install Requirements
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4️⃣ Download & Prepare Data
-Place the Kaggle dataset CSV in your working directory.
+- **Python**
+- **PyTorch**
+- **Transformers (Hugging Face)**
+- **TensorBoard**
+- **Pandas, NumPy**
 
-Adjust paths in the notebook or Python script if needed.
+---
 
-5️⃣ Run Training
-Use the provided Jupyter Notebook or Python script:
+## 📌 Project Structure
+├── data/ # Raw and preprocessed dataset
+├── notebooks/ # Jupyter notebooks for EDA & experiments
+├── models/ # Saved model checkpoints
+├── tensorboard_logs/ # Logs for TensorBoard visualization
+├── main.py # Main training and evaluation script
+├── requirements.txt # Project dependencies
+└── README.md
 
-bash
-Copy
-Edit
-# Example: Jupyter Notebook
-jupyter notebook FakeJobPostingsDetection.ipynb
 
-# Or Python script
-python train.py
-6️⃣ Visualize with TensorBoard
-bash
-Copy
-Edit
-tensorboard --logdir=runs
-Open http://localhost:6006 to explore training graphs.
+---
 
-🏗️ Project Structure
-bash
-Copy
-Edit
-📁 data/                 # Place your dataset here
-📜 FakeJobPostingsDetection.ipynb   # Main notebook
-📜 train.py              # Optional: Script version
-📜 requirements.txt      # Dependencies
-runs/                    # TensorBoard logs
-🛡️ Model Details
-Base Model: DistilBERT (distilbert-base-uncased)
+## ✅ Features
 
-Frameworks: PyTorch, Hugging Face Transformers
+- Fine-tunes **DistilBERT** for binary text classification
+- Handles text cleaning and tokenization
+- Logs loss and accuracy metrics to **TensorBoard**
+- Visualizes model performance during training
 
-Tasks: Binary classification (Real or Fake)
+---
 
-📌 Future Improvements
-Expand dataset with more sources.
+## 📈 Results
+Achieved good accuracy on test data.
 
-Deploy as a web app with an input form.
+Visualized training and validation loss, accuracy, and learning curves in TensorBoard for better debugging and tuning.
 
-Experiment with other transformer variants.
+## 🙌 Acknowledgements
+Inspired by various tutorials on transfer learning and NLP fraud detection.
 
-🙌 Credits
-Dataset: Fake Job Postings Dataset on Kaggle
+Dataset credits to [Kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction).
 
-Model: Hugging Face Transformers
-
-Visualization: TensorBoard
-
-Feel free to fork, star ⭐, and contribute!
+## 📬 Contact
+Feel free to reach out if you’d like to collaborate or suggest improvements!
+- GitHub: Akki-Maharaj
+- Linkedin: https://www.linkedin.com/in/akshat--/
+---
