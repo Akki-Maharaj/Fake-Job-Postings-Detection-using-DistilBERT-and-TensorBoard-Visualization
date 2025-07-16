@@ -63,5 +63,5 @@ Dataset credits to [Kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake
 ## 📬 Contact
 Feel free to reach out if you’d like to collaborate or suggest improvements!
 - GitHub: Akki-Maharaj
-- Linkedin: https://www.linkedin.com/in/akshat--/
+- Linkedin: https://www.linkedin.com/in/akshat--
 ---
